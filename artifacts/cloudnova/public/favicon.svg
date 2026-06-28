@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="Coud Nova icon, no text">
+
+  <defs>
+    <linearGradient id="strokeGrad" x1="130" y1="260" x2="900" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2ffcff"/>
+      <stop offset="0.55" stop-color="#00b7ff"/>
+      <stop offset="1" stop-color="#315bff"/>
+    </linearGradient>
+    <linearGradient id="strokeGrad2" x1="210" y1="720" x2="840" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2456ff"/>
+      <stop offset="0.38" stop-color="#27f5ff"/>
+      <stop offset="1" stop-color="#0b73ff"/>
+    </linearGradient>
+    <radialGradient id="novaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.35" stop-color="#bbffff"/>
+      <stop offset="0.72" stop-color="#39f3ff"/>
+      <stop offset="1" stop-color="#1679ff"/>
+    </radialGradient>
+    <filter id="softGlow" x="-45%" y="-45%" width="190%" height="190%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="18" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="starGlow" x="-70%" y="-70%" width="240%" height="240%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="g"/>
+      <feMerge>
+        <feMergeNode in="g"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+
+
+  <g id="coud-nova-icon" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M197 604
+             C131 604 88 551 101 489
+             C115 424 175 385 239 395
+             C274 304 365 252 462 271
+             C557 289 626 361 641 457
+             C687 423 753 421 807 456
+             C873 498 893 585 850 649
+             C817 700 762 724 703 713"
+          stroke="url(#strokeGrad)" stroke-width="46"/>
+    <path d="M206 690
+             C338 682 481 639 620 566
+             C703 523 771 491 817 512
+             C849 527 839 559 797 593
+             C708 666 542 738 357 758"
+          stroke="url(#strokeGrad2)" stroke-width="28"/>
+    <path d="M520 323
+             C518 431 501 493 462 530
+             C423 567 361 584 253 586
+             C362 588 424 605 463 643
+             C502 681 519 744 521 853
+             C524 744 541 681 579 643
+             C617 605 680 588 789 586
+             C680 584 617 567 579 529
+             C541 491 524 429 520 323Z"
+          fill="url(#novaGrad)" stroke="#31eaff" stroke-width="7"/>
+    <circle cx="520" cy="586" r="18" fill="#ffffff" opacity="0.97"/>
+  </g>
+
+</svg>

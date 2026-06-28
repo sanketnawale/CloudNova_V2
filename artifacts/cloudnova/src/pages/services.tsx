@@ -3,51 +3,57 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
-  Cloud, ArrowRight, ShieldCheck, Cpu, MessageSquare, Settings, LifeBuoy, Code2
+  Cloud, ArrowRight, Cpu, MessageSquare, Settings
 } from "lucide-react";
 
 const services = [
   {
     icon: Cloud,
-    title: "Cloud Migration & Strategy",
+    title: "Cloud Infrastructure Design",
     description:
-      "We architect your path from legacy on-premise or mainframe environments to modern cloud infrastructure — AWS, GCP, or Azure — with zero disruption to production workloads.",
-    outcomes: ["Infrastructure assessment & roadmap", "Phased migration with rollback plans", "Cost optimization modeling", "Post-migration governance"],
+      "We design secure, scalable, and automation-ready cloud infrastructure for modern applications and enterprise workloads. From architecture planning to deployment strategy, CloudNova helps teams build a strong technical foundation.",
+    outcomes: [
+      "Cloud architecture planning",
+      "Kubernetes and container platforms",
+      "CI/CD and automation design",
+      "Monitoring and reliability setup",
+    ],
   },
   {
-    icon: Code2,
-    title: "Custom WhatsApp Bot Development",
+    icon: MessageSquare,
+    title: "Custom AI Bot Development",
     description:
-      "Our AI team designs and builds bespoke WhatsApp automation tailored to your business logic, CRM stack, and customer journey — from initial brief to production deployment.",
-    outcomes: ["Requirements workshops", "NLP model fine-tuning", "CRM/ERP integration build", "Live monitoring setup"],
+      "We build autonomous AI bots for business-specific workflows such as customer support, migration assistance, airport service support, document guidance, and operational helpdesks.",
+    outcomes: [
+      "Requirements and workflow design",
+      "Natural language conversations",
+      "Backend and API integrations",
+      "Deployment and monitoring support",
+    ],
   },
   {
     icon: Cpu,
     title: "Mainframe Modernization",
     description:
-      "We take your COBOL, JCL, and legacy batch systems and bridge them into modern architectures — preserving business logic while exposing it via cloud-native APIs.",
-    outcomes: ["JCL and COBOL assessment", "API wrapping & exposure layer", "Data pipeline migration", "Parallel-run validation"],
+      "We help teams connect traditional mainframe workflows with modern tools, automation layers, and AI-assisted operations without forcing a full system rewrite from day one.",
+    outcomes: [
+      "JCL and batch workflow analysis",
+      "Job and operations automation",
+      "API and integration layer design",
+      "AI-assisted mainframe tooling",
+    ],
   },
   {
     icon: Settings,
-    title: "Enterprise Integration",
+    title: "Enterprise Modernization",
     description:
-      "Connect any combination of mainframe, cloud, SaaS, or on-premise systems. We design and implement integration layers that route, transform, and orchestrate data across your stack.",
-    outcomes: ["End-to-end integration design", "Event-driven architecture", "ETL/ELT pipeline build", "Data schema translation"],
-  },
-  {
-    icon: ShieldCheck,
-    title: "Security & Compliance Consulting",
-    description:
-      "From SOC 2 readiness to mainframe access control, our security consultants harden your systems against modern threat vectors while meeting regulatory requirements.",
-    outcomes: ["Security posture assessment", "SOC 2 / ISO 27001 readiness", "Mainframe access hardening", "Penetration testing"],
-  },
-  {
-    icon: LifeBuoy,
-    title: "Managed Support & SRE",
-    description:
-      "24/7 site reliability engineering for CloudNoiva deployments and your broader cloud estate. We own incident response, runbooks, and SLA enforcement so your team can focus on product.",
-    outcomes: ["99.99% uptime SLA", "On-call incident response", "Proactive capacity planning", "Weekly reliability reports"],
+      "We support organizations in modernizing internal systems, connecting legacy platforms, and improving operational workflows through automation, integrations, and cloud-ready architecture.",
+    outcomes: [
+      "Legacy system integration",
+      "Process automation",
+      "Data and workflow connectivity",
+      "Modern platform enablement",
+    ],
   },
 ];
 
@@ -80,12 +86,13 @@ export default function Services() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
               Expert delivery,{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">
-                from strategy to production.
+                from design to production.
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              CloudNoiva's engineering and consulting teams embed with your organization to deliver
-              outcomes — not slide decks. Every engagement ends with something running in production.
+              CloudNova helps businesses design, build, and modernize digital systems through cloud
+              infrastructure, AI automation, and enterprise integration. Every engagement is focused
+              on practical engineering, clear delivery, and systems that can move toward production.
             </p>
           </motion.div>
         </div>
@@ -99,7 +106,7 @@ export default function Services() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid md:grid-cols-2 gap-8"
           >
             {services.map((service) => (
               <motion.div
@@ -134,14 +141,32 @@ export default function Services() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-2xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">How we engage</h2>
-            <p className="text-muted-foreground">A structured, transparent delivery process — no ambiguity, no surprise invoices.</p>
+            <p className="text-muted-foreground">
+              A structured, transparent delivery process — no ambiguity, no surprise invoices.
+            </p>
           </div>
           <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {[
-              { step: "01", title: "Discovery", desc: "We map your infrastructure, objectives, and constraints in a focused workshop." },
-              { step: "02", title: "Architecture", desc: "Our engineers design a solution blueprint and delivery roadmap with clear milestones." },
-              { step: "03", title: "Build", desc: "Iterative delivery in 2-week sprints. You see progress early and often." },
-              { step: "04", title: "Handover", desc: "Full documentation, runbooks, and a knowledge transfer session with your team." },
+              {
+                step: "01",
+                title: "Discover",
+                desc: "We understand your current systems, pain points, and business goals.",
+              },
+              {
+                step: "02",
+                title: "Design",
+                desc: "We define the architecture, workflow, integration approach, and delivery roadmap.",
+              },
+              {
+                step: "03",
+                title: "Build",
+                desc: "We develop the solution with clear milestones, testing, and technical documentation.",
+              },
+              {
+                step: "04",
+                title: "Deploy",
+                desc: "We support production deployment, monitoring, and continuous improvement.",
+              },
             ].map((phase, i) => (
               <motion.div
                 key={phase.step}

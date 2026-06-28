@@ -17,10 +17,10 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/50 border border-primary/20 text-primary text-sm font-mono mb-8"
+              className="hidden"
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              SYSTEMS ONLINE: CLOUDNOIVA V2.4
+              SYSTEMS ONLINE: CLOUDNOVA V2.4
             </motion.div>
             
             <motion.h1
@@ -38,7 +38,7 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
             >
-              Powerful mainframe integration and AI-driven engagement tools, precision-engineered to bridge legacy systems and modern agility.
+              Powerful integrations and AI automation bots, precision-engineered to connect legacy systems with modern digital workflows and improve customer engagement.
             </motion.p>
             
             <motion.div
@@ -62,40 +62,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Metrics Strip */}
-      <section className="border-y border-border/40 bg-secondary/30 py-12 relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-            {[
-              { label: "Uptime SLA", value: "99.999%", icon: Activity },
-              { label: "Latency", value: "<12ms", icon: Zap },
-              { label: "Data Secured", value: "SOC 2 Type II", icon: ShieldCheck },
-              { label: "Deployments", value: "Zero-Downtime", icon: Server },
-            ].map((metric, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="flex flex-col items-center text-center space-y-2"
-              >
-                <metric.icon className="w-6 h-6 text-primary/70 mb-2" />
-                <h4 className="text-3xl font-bold font-mono text-foreground">{metric.value}</h4>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider">{metric.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Products Highlights */}
-      <section className="py-24 md:py-32 relative">
+      <section className="py-12 md:py-16 relative">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Engineered for absolute reliability.</h2>
-              <p className="text-lg text-muted-foreground">From mission-critical mainframe tools to high-throughput WhatsApp bots, CloudNoiva products deliver performance without compromise.</p>
+              <p className="text-lg text-muted-foreground">From legacy system integrations to autonomous AI bots, CloudNova products help businesses automate workflows, connect platforms, and operate with confidence.</p>
             </div>
             <Link href="/products">
               <Button variant="ghost" className="group">
@@ -114,14 +87,14 @@ export default function Home() {
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32 group-hover:bg-primary/20 transition-colors" />
               <Terminal className="w-12 h-12 text-primary mb-8" />
-              <h3 className="text-2xl font-bold mb-4">Mainframe Solutions</h3>
+              <h3 className="text-2xl font-bold mb-4">Developer & Operations Tools</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                JCL Cat, 8bit CTA.in, and Zagnet. Bridge the gap between legacy core systems and modern cloud infrastructure with zero friction.
+                CloudNova builds technical tools for developers and operations teams, helping them automate repetitive tasks, analyze workflows, and connect traditional systems with modern cloud operations.
               </p>
               <ul className="space-y-3 mb-8 text-sm">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> JCL Cataloging & Management</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Enterprise Data Connectivity</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Mainframe-era Conversions</li>
+                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Workflow Automation</li>
+                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Job & System Support</li>
+                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> AI-assisted Technical Operations</li>
               </ul>
             </motion.div>
 
@@ -134,14 +107,14 @@ export default function Home() {
             >
               <div className="absolute bottom-0 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl -mr-32 -mb-32 group-hover:bg-cyan-500/20 transition-colors" />
               <MessageSquare className="w-12 h-12 text-primary mb-8" />
-              <h3 className="text-2xl font-bold mb-4">AI WhatsApp Bots</h3>
+              <h3 className="text-2xl font-bold mb-4">Custom AI Bot Solutions</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                Engage customers where they already are. Deploy autonomous, intelligent agents that handle scale natively.
+                CloudNova builds autonomous AI bots for industry-specific workflows, helping businesses guide users, answer questions, process requests, and automate support operations.
               </p>
               <ul className="space-y-3 mb-8 text-sm">
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Natural Language Processing</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> High-throughput Architecture</li>
-                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> CRM & ERP Integrations</li>
+                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Natural Language Conversations</li>
+                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Scalable Bot Architecture</li>
+                <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-primary" /> Backend & API Integrations</li>
               </ul>
             </motion.div>
           </div>
@@ -154,7 +127,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Ready to upgrade your infrastructure?</h2>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Schedule a technical deep-dive with our engineering team to see CloudNoiva in action.
+            Schedule a technical deep-dive with our engineering team to see CloudNova in action.
           </p>
           <Link href="/demo">
             <Button size="lg" className="h-14 px-10 text-lg">

@@ -6,48 +6,15 @@ import { ArrowRight, Target, Eye, Heart } from "lucide-react";
 
 const team = [
   {
-    name: "Rafael Noiva",
-    role: "Founder & CEO",
-    bio: "Former IBM mainframe engineer turned cloud architect. Built CloudNoiva after spending a decade watching enterprises struggle to bridge legacy and modern infrastructure.",
-    initials: "RN",
+    name: "Sanket Nawale",
+    role: "Founder",
+    bio: "Technical architect focused on observability, automation, and infrastructure. Founder of CloudNova and 8-Bit Cat.",
+    initials: "SN",
     color: "from-cyan-500 to-primary",
-  },
-  {
-    name: "Sofia Almeida",
-    role: "Chief Technology Officer",
-    bio: "20 years in distributed systems and enterprise integration. Led cloud migration programs at two Fortune 100 companies before joining CloudNoiva.",
-    initials: "SA",
-    color: "from-violet-500 to-cyan-500",
-  },
-  {
-    name: "Marcus Chen",
-    role: "Head of AI Products",
-    bio: "NLP researcher turned product leader. Designed the conversation engine powering NoivaBot's industry-leading accuracy across 12 languages.",
-    initials: "MC",
-    color: "from-amber-500 to-rose-500",
-  },
-  {
-    name: "Priya Kapoor",
-    role: "VP of Engineering",
-    bio: "Site reliability engineer and mainframe specialist who designed Zagnet's high-throughput data routing architecture from the ground up.",
-    initials: "PK",
-    color: "from-green-500 to-cyan-500",
-  },
-  {
-    name: "Lucas Ferreira",
-    role: "Head of Customer Success",
-    bio: "Systems integrator with 15 years of enterprise delivery experience. Leads the team that gets CloudNoiva from contract to production in record time.",
-    initials: "LF",
-    color: "from-rose-500 to-violet-500",
-  },
-  {
-    name: "Ana Torres",
-    role: "VP of Sales & Partnerships",
-    bio: "Enterprise technology sales leader who built the partnership network that brought CloudNoiva products to markets across four continents.",
-    initials: "AT",
-    color: "from-primary to-green-500",
+    image: "/images/team/sanket.jpg",
   },
 ];
+
 
 const values = [
   {
@@ -68,13 +35,34 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2019", event: "CloudNoiva founded in São Paulo. First product: JCL Cat." },
-  { year: "2021", event: "Zagnet launched. First enterprise deployment at a tier-1 Brazilian bank." },
-  { year: "2022", event: "Series A funding. Expanded to Portugal and the UK." },
-  { year: "2023", event: "NoivaBot Engage released. 10M WhatsApp messages processed in the first month." },
-  { year: "2024", event: "8bit CTA.in launched. 50+ enterprise clients globally." },
-  { year: "2025", event: "NoivaBot Support released. ISO 27001 and SOC 2 Type II certified." },
-  { year: "2026", event: "CloudNoiva V2 platform launched. Operating in 12 countries." },
+  {
+    year: "Jul 2025",
+    event: "CloudNova began product development around automation, technical workflows, and developer tools.",
+  },
+  {
+    year: "Jan 1, 2026",
+    event: "8-Bit Cat launched as an early developer-focused workflow tool.",
+  },
+  {
+    year: "Feb 2026",
+    event: "Work started on the Airport Assistance Bot for guided user support workflows.",
+  },
+  {
+    year: "Mar 6, 2026",
+    event: "Avvisami Telegram launched with smart status alerts and user notifications.",
+  },
+  {
+    year: "Apr 2026",
+    event: "Avvisami expanded toward WhatsApp to support a broader messaging workflow.",
+  },
+  {
+    year: "Jun 19, 2026",
+    event: "Z-Agent launched for job monitoring, spool analysis, dataset queries, and workflow guidance.",
+  },
+  {
+    year: "2026+",
+    event: "CloudNova continues building AI automation bots, alerting platforms, and developer operations tools.",
+  },
 ];
 
 export default function Company() {
@@ -100,7 +88,7 @@ export default function Company() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              CloudNoiva was founded by people who lived the pain of bridging mainframe infrastructure
+              CloudNova was founded by people who lived the pain of bridging mainframe infrastructure
               and modern cloud expectations. We didn't come from consulting — we came from the
               engine room.
             </p>
@@ -148,19 +136,18 @@ export default function Company() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  In 2019, our founder Rafael spent six months on a mainframe modernization project
-                  that should have taken three. The tools didn't fit the problem, the consultants
-                  were charging for slide decks, and the enterprise had no path from here to there.
+                  CloudNova started with one simple belief: useful automation should not feel complicated.
                 </p>
                 <p>
-                  So he built JCL Cat on a weekend. Then Zagnet. Then a WhatsApp bot that cut the
-                  client's support costs by 40% in 60 days. CloudNoiva grew out of a simple
-                  conviction: enterprises deserve tools that work as hard as the people running them.
+                  We began in July 2025 by building ideas around developer tools, technical workflows, and automation.
+                  Those experiments quickly turned into a clear direction: reduce manual work, connect systems, and help people move faster.
                 </p>
                 <p>
-                  Today we operate across 12 countries with 50+ enterprise clients — and we still
-                  obsess over the same things we always have: reliability, honesty, and shipping
-                  things that run for years without drama.
+                  Since then, CloudNova has grown into a product studio focused on AI automation bots,
+                  smart alerting platforms, and developer operations tools.
+                </p>
+                <p>
+                  Today, we are still early — but the mission is clear: build practical products that solve real problems and make work easier.
                 </p>
               </div>
             </motion.div>
@@ -206,9 +193,9 @@ export default function Company() {
           <div className="max-w-2xl mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">The team</h2>
             <p className="text-muted-foreground">
-              Engineers, researchers, and operators who've collectively spent over 150 years in
-              enterprise infrastructure and AI.
-            </p>
+            CloudNova is currently founder-led, built around practical experience in automation,
+            infrastructure, and developer operations.
+          </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {team.map((person, i) => (
@@ -221,8 +208,20 @@ export default function Company() {
                 className="rounded-2xl border border-border bg-card p-6 flex flex-col gap-4"
                 data-testid={`card-team-${person.name.replace(/\s+/g, "-").toLowerCase()}`}
               >
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${person.color} flex items-center justify-center text-white font-bold text-lg flex-shrink-0`}>
-                  {person.initials}
+                <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 border border-border bg-muted">
+                  {person.image ? (
+                    <img
+                      src={person.image}
+                      alt={person.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div
+                      className={`w-full h-full bg-gradient-to-br ${person.color} flex items-center justify-center text-white font-bold text-lg`}
+                    >
+                      {person.initials}
+                    </div>
+                  )}
                 </div>
                 <div>
                   <h3 className="font-bold text-lg">{person.name}</h3>
@@ -254,3 +253,4 @@ export default function Company() {
     </div>
   );
 }
+

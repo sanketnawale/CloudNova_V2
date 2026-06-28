@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import BlogWelcomeToCloudNova from "@/pages/blog/welcome-to-cloudnova";
 
 import Home from "@/pages/home";
 import Products from "@/pages/products";
@@ -13,6 +14,12 @@ import Blogs from "@/pages/blogs";
 import Company from "@/pages/company";
 import Demo from "@/pages/demo";
 import NotFound from "@/pages/not-found";
+import BlogJclCat from "./pages/blog/blog-jcl-cat";
+import BlogAvvisami from "./pages/blog/blog-avvisami";
+import Careers from "./pages/careers";
+import Privacy from "./pages/privacy";
+import Terms from "./pages/terms";
+import Cookies from "./pages/cookies";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +35,13 @@ function Router() {
           <Route path="/blogs" component={Blogs} />
           <Route path="/company" component={Company} />
           <Route path="/demo" component={Demo} />
+          <Route path="/blog/welcome-to-cloudnova" component={BlogWelcomeToCloudNova} />
+          <Route path="/blog/jcl-cat" component={BlogJclCat} />
+          <Route path="/careers" component={Careers} />
+          <Route path="/privacy" component={Privacy} />
+          <Route path="/terms" component={Terms} />
+          <Route path="/cookies" component={Cookies} />
+          <Route path="/blog/avvisami-multilingual-permit-updates" component={BlogAvvisami} />
           <Route component={NotFound} />
         </Switch>
       </main>

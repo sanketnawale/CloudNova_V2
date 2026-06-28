@@ -1,8 +1,8 @@
 kind = "web"
 previewPath = "/"
-title = "CloudNoiva"
+title = "CloudNova"
 version = "1.0.0"
-id = "artifacts/cloudnoiva"
+id = "artifacts/cloudnova"
 router = "path"
 
 [[integratedSkills]]
@@ -15,11 +15,11 @@ paths = [ "/" ]
 localPort = 25469
 
 [services.development]
-run = "pnpm --filter @workspace/cloudnoiva run dev"
+run = "pnpm --filter @workspace/cloudnova run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/cloudnoiva", "run", "build" ]
-publicDir = "artifacts/cloudnoiva/dist/public"
+build = [ "pnpm", "--filter", "@workspace/cloudnova", "run", "build" ]
+publicDir = "artifacts/cloudnova/dist/public"
 serve = "static"
 
 [[services.production.rewrites]]
