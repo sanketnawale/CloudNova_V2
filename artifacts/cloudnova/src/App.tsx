@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import BlogWelcomeToCloudNova from "@/pages/blog/welcome-to-cloudnova";
+import BlogMonitoringLaunch from "@/pages/blog/blog-monitoring-launch";
 
 import Home from "@/pages/home";
 import Products from "@/pages/products";
@@ -20,6 +21,9 @@ import Careers from "./pages/careers";
 import Privacy from "./pages/privacy";
 import Terms from "./pages/terms";
 import Cookies from "./pages/cookies";
+import Monitoring from "@/pages/monitoring";
+import BlogZAgentLive from "@/pages/blog/blog-z-agent-live";
+import BlogWelcomingFeryal from "@/pages/blog/blog-welcoming-feryal";
 
 const queryClient = new QueryClient();
 
@@ -41,7 +45,11 @@ function Router() {
           <Route path="/privacy" component={Privacy} />
           <Route path="/terms" component={Terms} />
           <Route path="/cookies" component={Cookies} />
+          <Route path="/monitoring" component={Monitoring} />
+          <Route path="/blog/monitoring-launch" component={BlogMonitoringLaunch} />
           <Route path="/blog/avvisami-multilingual-permit-updates" component={BlogAvvisami} />
+          <Route path="/blog/z-agent-live" component={BlogZAgentLive} />
+          <Route path="/blog/welcoming-feryal-akmoum" component={BlogWelcomingFeryal} />
           <Route component={NotFound} />
         </Switch>
       </main>

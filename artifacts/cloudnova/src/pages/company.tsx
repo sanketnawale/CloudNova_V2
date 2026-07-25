@@ -4,18 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, Target, Eye, Heart } from "lucide-react";
 
-const team = [
-  {
-    name: "Sanket Nawale",
-    role: "Founder",
-    bio: "Technical architect focused on observability, automation, and infrastructure. Founder of CloudNova and 8-Bit Cat.",
-    initials: "SN",
-    color: "from-cyan-500 to-primary",
-    image: "/images/team/sanket.jpg",
-  },
-];
-
-
 const values = [
   {
     icon: Target,
@@ -68,7 +56,6 @@ const milestones = [
 export default function Company() {
   return (
     <div className="flex flex-col w-full">
-      {/* Hero */}
       <section className="pt-24 pb-20 relative overflow-hidden border-b border-border/40">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/8 via-background to-background -z-10" />
         <div className="container mx-auto px-4 md:px-6">
@@ -88,15 +75,12 @@ export default function Company() {
               </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              CloudNova was founded by people who lived the pain of bridging mainframe infrastructure
-              and modern cloud expectations. We didn't come from consulting — we came from the
-              engine room.
+              CloudNova builds practical automation products for real operational workflows. We focus on useful software, reliable systems, and products that reduce manual effort.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Mission / Vision / Values */}
       <section className="py-20 md:py-24 border-b border-border/40">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-3 gap-8">
@@ -121,7 +105,6 @@ export default function Company() {
         </div>
       </section>
 
-      {/* Story */}
       <section className="py-20 md:py-24 bg-secondary/20 border-b border-border/40">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -152,7 +135,6 @@ export default function Company() {
               </div>
             </motion.div>
 
-            {/* Timeline */}
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -187,59 +169,11 @@ export default function Company() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-2xl mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">The team</h2>
-            <p className="text-muted-foreground">
-            CloudNova is currently founder-led, built around practical experience in automation,
-            infrastructure, and developer operations.
-          </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {team.map((person, i) => (
-              <motion.div
-                key={person.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.08 }}
-                className="rounded-2xl border border-border bg-card p-6 flex flex-col gap-4"
-                data-testid={`card-team-${person.name.replace(/\s+/g, "-").toLowerCase()}`}
-              >
-                <div className="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 border border-border bg-muted">
-                  {person.image ? (
-                    <img
-                      src={person.image}
-                      alt={person.name}
-                      className="w-full h-full object-cover"
-                    />
-                  ) : (
-                    <div
-                      className={`w-full h-full bg-gradient-to-br ${person.color} flex items-center justify-center text-white font-bold text-lg`}
-                    >
-                      {person.initials}
-                    </div>
-                  )}
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg">{person.name}</h3>
-                  <p className="text-primary text-sm font-medium mb-2">{person.role}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{person.bio}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
       <section className="py-20 border-t border-border/40 bg-secondary/20">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Want to work with us?</h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-xl mx-auto">
-            We're always looking for engineers who care deeply about reliability and craft.
+            We build practical tools for automation, observability, and operational workflows.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/demo">
@@ -253,4 +187,3 @@ export default function Company() {
     </div>
   );
 }
-

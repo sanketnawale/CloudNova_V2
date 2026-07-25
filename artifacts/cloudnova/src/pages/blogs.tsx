@@ -40,6 +40,40 @@ const posts = [
     readTime: "5 min",
     featured: false,
   },
+  {
+    id: 3,
+    slug: "monitoring-launch",
+    title: "CloudNova Monitoring Is Live",
+    excerpt:
+      "A live monitoring page now shows the Avvisami Telegram dashboard with activity, status, and growth in one place.",
+    category: "Company",
+    date: "July 4, 2026",
+    readTime: "4 min",
+    featured: false,
+  },
+  {
+    id: 4,
+    slug: "z-agent-live",
+    title: "Z-Agent is Live: A Small Step Toward Modern IBM Z Operations",
+    excerpt:
+      "Z-Agent is now live: a modern web experience for exploring IBM Z operations, job output, spool data, datasets, USS files, and AI-assisted guidance.",
+    category: "Mainframe",
+    date: "July 25, 2026",
+    readTime: "5 min",
+    featured: true,
+  },
+  {
+    id: 5,
+    slug: "welcoming-feryal-akmoum",
+    title: "Welcoming Feryal Akmoum to CloudNova",
+    excerpt:
+      "CloudNova welcomes Feryal Akmoum from Algeria as a Business Consultant, supporting practical business improvement and long-term growth.",
+    category: "People & Culture",
+    date: "July 25, 2026",
+    readTime: "2 min",
+    featured: false,
+    image: "/feryal-akmoum-preview.jpeg",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
