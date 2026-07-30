@@ -2,6 +2,8 @@ import { Link } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
+const WHATSAPP_LINK = "https://wa.me/393510172022";
+
 export default function BlogMiraLaunch() {
   return (
     <article className="min-h-screen">
@@ -28,6 +30,10 @@ export default function BlogMiraLaunch() {
             : your permesso di soggiorno, tracked on WhatsApp.
           </h1>
 
+          <p className="mt-4 max-w-3xl text-sm font-mono uppercase tracking-widest text-primary">
+            Migration Intelligence &amp; Response Assistant
+          </p>
+
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
             CloudNova is launching MIRA, a WhatsApp assistant that monitors
             your permesso di soggiorno status and notifies you the moment it
@@ -47,7 +53,7 @@ export default function BlogMiraLaunch() {
         <section className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
           <img
             src="/mira-logo.svg"
-            alt="MIRA logo — WhatsApp assistant for permesso di soggiorno tracking"
+            alt="MIRA — Migration Intelligence & Response Assistant logo"
             width={1600}
             height={900}
             loading="eager"
@@ -57,8 +63,9 @@ export default function BlogMiraLaunch() {
 
         <div className="mx-auto mt-12 max-w-3xl space-y-6 text-base leading-8 text-muted-foreground md:text-lg">
           <p className="text-xl leading-8 text-foreground md:text-2xl">
-            Waiting for a permesso di soggiorno is one of the most stressful
-            parts of moving to Italy. MIRA was built to remove the guesswork.
+            MIRA — short for <strong>Migration Intelligence &amp; Response Assistant</strong> —
+            was built to remove the guesswork from one of the most stressful
+            parts of moving to Italy: waiting for a permesso di soggiorno.
           </p>
 
           <p>
@@ -107,6 +114,16 @@ export default function BlogMiraLaunch() {
             MIRA is live now on WhatsApp. Share your practice ID and let MIRA
             handle the waiting for you.
           </p>
+
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Start tracking your permesso
+            <ArrowRight className="h-4 w-4" />
+          </a>
         </section>
 
         <div className="mx-auto mt-12 max-w-3xl">
