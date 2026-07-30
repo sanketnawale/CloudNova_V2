@@ -24,6 +24,7 @@ import Cookies from "./pages/cookies";
 import Monitoring from "@/pages/monitoring";
 import BlogZAgentLive from "@/pages/blog/blog-z-agent-live";
 import BlogWelcomingFeryal from "@/pages/blog/blog-welcoming-feryal";
+import BlogMiraLaunch from "@/pages/blog/blog-mira-launch";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ function Router() {
           <Route path="/blog/avvisami-multilingual-permit-updates" component={BlogAvvisami} />
           <Route path="/blog/z-agent-live" component={BlogZAgentLive} />
           <Route path="/blog/welcoming-feryal-akmoum" component={BlogWelcomingFeryal} />
+          <Route path="/blog/mira-launch" component={BlogMiraLaunch} />
           <Route component={NotFound} />
         </Switch>
       </main>

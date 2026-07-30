@@ -74,6 +74,18 @@ const posts = [
     featured: false,
     image: "/feryal-akmoum-preview.jpeg",
   },
+  {
+    id: 6,
+    slug: "mira-launch",
+    title: "Introducing MIRA: Track Your Permesso di Soggiorno on WhatsApp",
+    excerpt:
+      "MIRA is CloudNova's new WhatsApp assistant that monitors your permesso di soggiorno and notifies you the moment your status changes.",
+    category: "Product Launch",
+    date: "July 30, 2026",
+    readTime: "3 min",
+    featured: true,
+    image: "/mira-logo.svg",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
