@@ -26,9 +26,6 @@ permissions:
   contents: read
   packages: write
 
-concurrency:
-  group: cloudnova-image-${{ github.ref }}
-  cancel-in-progress: true
 
 env:
   REGISTRY: ghcr.io
