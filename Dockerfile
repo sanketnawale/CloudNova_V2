@@ -5,6 +5,7 @@ FROM node:24-alpine AS build
 WORKDIR /workspace
 
 ENV PORT=3000
+ENV BASE_PATH=/
 
 RUN corepack enable
 
