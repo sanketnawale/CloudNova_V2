@@ -6,15 +6,14 @@ WORKDIR /workspace
 
 ENV PORT=3000
 ENV BASE_PATH=/
+ENV NODE_ENV=production
 
 RUN corepack enable
 
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 COPY tsconfig.json tsconfig.base.json ./
 
-COPY lib ./lib
-COPY scripts ./scripts
-COPY artifacts/cloudnova ./artifacts/cloudnova
+COPY . .
 
 RUN pnpm install --frozen-lockfile
 

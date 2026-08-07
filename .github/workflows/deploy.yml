@@ -26,10 +26,11 @@ permissions:
   contents: read
   packages: write
 
-
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: sanketnawale/cloudnova-v2
+  PORT: "3000"
+  BASE_PATH: "/"
 
 jobs:
   validate:
@@ -56,15 +57,12 @@ jobs:
         run: pnpm run typecheck
 
       - name: Build CloudNova
-        env:
-          PORT: "3000"
         run: pnpm --dir ./artifacts/cloudnova run build
 
       - name: Verify build output
         run: |
           test -f artifacts/cloudnova/dist/public/index.html
           test -d artifacts/cloudnova/dist/public/assets
-
   container:
     name: Build container
     needs: validate
