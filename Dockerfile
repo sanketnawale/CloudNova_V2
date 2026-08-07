@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM node:24-alpine AS build
+FROM node:24-bookworm-slim AS build
 
 WORKDIR /workspace
 
@@ -9,9 +9,6 @@ ENV BASE_PATH=/
 ENV NODE_ENV=production
 
 RUN corepack enable
-
-COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
-COPY tsconfig.json tsconfig.base.json ./
 
 COPY . .
 
