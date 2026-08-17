@@ -1,6 +1,6 @@
 export default function Monitoring() {
   const dashboardUrl =
-    "https://dashboard.cloudnova.tech/public/dashboard/178c2f32-cc05-4ae5-919b-dded8a96396f#theme=night&bordered=false&titled=false&background=false&refresh=60";
+    "https://stats.cloudnova.tech/public/dashboard/178c2f32-cc05-4ae5-919b-dded8a96396f#theme=night&bordered=false&titled=false&background=false&refresh=60";
 
   return (
     <main className="fixed inset-x-0 top-16 bottom-0 overflow-hidden bg-background text-foreground">
