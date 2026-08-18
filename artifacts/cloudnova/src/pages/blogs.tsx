@@ -86,6 +86,18 @@ const posts = [
     featured: true,
     image: "/mira-logo.svg",
   },
+  {
+    id: 7,
+    slug: "mira-whatsapp-monitoring",
+    title: "MIRA WhatsApp Monitoring Is Live",
+    excerpt:
+      "CloudNova now has a live dashboard for MIRA, showing aggregated WhatsApp activity, tracking cases, notification trends, and service growth.",
+    category: "Product Updates",
+    date: "August 18, 2026",
+    readTime: "3 min",
+    featured: true,
+    image: "/mira-logo.svg",
+  },
 ];
 
 const categoryColors: Record<string, string> = {
