@@ -27,6 +27,7 @@ import BlogWelcomingFeryal from "@/pages/blog/blog-welcoming-feryal";
 import BlogMiraLaunch from "@/pages/blog/blog-mira-launch";
 import MiraMonitoring from "@/pages/mira-monitoring";
 import BlogMiraMonitoringLaunch from "@/pages/blog/blog-mira-monitoring-launch";
+import BlogPaymentOps from "@/pages/blog/blog-paymentops";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +57,7 @@ function Router() {
           <Route path="/blog/mira-launch" component={BlogMiraLaunch} />
           <Route path="/mira-monitoring" component={MiraMonitoring} />
           <Route path="/blog/mira-whatsapp-monitoring" component={BlogMiraMonitoringLaunch} />
+          <Route path="/blog/cloudnova-paymentops-iso-20022" component={BlogPaymentOps} />
           <Route component={NotFound} />
         </Switch>
       </main>

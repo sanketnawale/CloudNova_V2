@@ -98,6 +98,17 @@ const posts = [
     featured: true,
     image: "/mira-logo.svg",
   },
+  {
+    id: 8,
+    slug: "cloudnova-paymentops-iso-20022",
+    title: "Building CloudNova PaymentOps: A Practical Platform for ISO 20022 Operations",
+    excerpt:
+      "PaymentOps focuses on what happens around payment data: validation and repair candidates, deterministic matching and reconciliation, and controlled exception operations across the ISO 20022 lifecycle.",
+    category: "Payments",
+    date: "September 24, 2026",
+    readTime: "9 min",
+    featured: true,
+  },
 ];
 
 const categoryColors: Record<string, string> = {
@@ -107,6 +118,7 @@ const categoryColors: Record<string, string> = {
   "Case Study": "bg-green-500/10 text-green-400 border-green-500/20",
   Security: "bg-rose-500/10 text-rose-400 border-rose-500/20",
   Company: "bg-primary/10 text-primary border-primary/20",
+  Payments: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
 };
 
 const container = {
